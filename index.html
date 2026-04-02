@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoSync 360 | Universal Automation Engine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Orbitron:wght@500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">AUTOSYNC<span>360</span></div>
+        <div class="status-indicator">
+            <span class="pulse"></span> SYSTEM ONLINE
+        </div>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                   
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+    <a href="#">Our Services <i class="fas fa-chevron-down"></i></a>
+    <ul class="dropdown-menu">
+        <li><a href="smart-planning.html" target="_blank"><i class="fas fa-brain"></i> Smart Planning</a></li>
+        <li><a href="digital-flows.html" target="_blank"><i class="fas fa-sync-alt"></i> Digital Flows</a></li>
+        <li><a href="custom-builds.html" target="_blank"><i class="fas fa-tools"></i> Custom Builds</a></li>
+    </ul>
+</li>
+                <li><a href="#">Contact</a></li>
+                <li><i class="fas fa-search search-icon"></i></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="command-center">
+        <header class="hero-text">
+            <h1>Universal <span>Systems</span> Integrator</h1>
+            <p>Digitize any business. Automate any workflow. Fabricate any structure.</p>
+        </header>
+
+        <div class="legs-container">
+            <div class="leg-card" id="leg-agentic">
+                <i class="fas fa-brain"></i>
+                <h3>Agentic</h3>
+                <p>Intelligence & Strategy</p>
+                <div class="glow-bar"></div>
+            </div>
+            <div class="leg-card" id="leg-workflow">
+                <i class="fas fa-network-wired"></i>
+                <h3>Workflow</h3>
+                <p>Connectivity & Logistics</p>
+                <div class="glow-bar"></div>
+            </div>
+            <div class="leg-card" id="leg-industrial">
+                <i class="fas fa-microchip"></i>
+                <h3>Industrial</h3>
+                <p>Physical Execution</p>
+                <div class="glow-bar"></div>
+            </div>
+        </div>
+
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="dots">
+                    <span class="d-red"></span>
+                    <span class="d-yellow"></span>
+                    <span class="d-green"></span>
+                </div>
+                <div class="terminal-id">DIAGNOSTIC_PROTOCOL_V2.0</div>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+                <p class="bot-msg">> Welcome, Architect. Please describe the business "pain" or system requirement you wish to solve.</p>
+            </div>
+            <div class="terminal-input-area">
+                <span class="prompt">User@AutoSync:~$</span>
+                <input type="text" id="user-input" autocomplete="off" placeholder="Type symptom or command (e.g. 'Digitize my shop and automate M-Pesa payments')">
+            </div>
+        </div>
+
+        <div id="prescription-overlay" class="overlay">
+            <div class="prescription-card">
+                <h2><i class="fas fa-file-medical"></i> Treatment Plan</h2>
+                <div id="treatment-details"></div>
+                <div class="billing-box">
+                    <p>Estimated Setup Cost:</p>
+                    <h3 id="cost-display">Ksh 0.00</h3>
+                </div>
+                <div class="action-btns">
+                    <button class="btn-cancel" onclick="closePrescription()">Cancel</button>
+                    <button class="btn-pay">Initiate M-Pesa STK Push</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <section id="about" class="about-section">
+    <div class="container about-wrapper">
+        <div class="about-content">
+            <span class="sub-heading">Precision Engineering</span>
+            <h2>The Bridge Between Vision and <span>Systems</span></h2>
+            <p>
+                At <strong>AutoSync 360</strong>, we eliminate the gap between digital logic and physical execution. We don't just build websites or machines; we architect <strong>integrated ecosystems</strong> where your records, payments, and hardware move in perfect sync.
+            </p>
+            
+            <div class="pillar-grid">
+                <div class="pillar-item">
+                    <i class="fas fa-shield-virus"></i>
+                    <h4>Smart Planning</h4>
+                    <p>Strategic Intelligence & Security audits for a safe, scalable foundation.</p>
+                </div>
+                <div class="pillar-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <h4>Automatic Flows</h4>
+                    <p>Digital Connectivity linking M-Pesa and SMS into a seamless pulse.</p>
+                </div>
+                <div class="pillar-item">
+                    <i class="fas fa-tools"></i>
+                    <h4>Custom Execution</h4>
+                    <p>Physical Building and industrial fabrication using high-end engineering.</p>
+                </div>
+            </div>
+
+            <div class="bio-footer">
+                <p>Built on a foundation of <strong>Industrial Engineering from Moi University</strong>, we treat every business challenge with the precision of a master architect.</p>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
